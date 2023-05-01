@@ -1,0 +1,6 @@
+20230501	14:12:04	cd01a514-d76b-4a93-8ad3-7f45dc6c88f9	Log event emmited!!
+20230501	14:13:37	e98a3a21-8c88-47da-b059-38307b5e49a2	Log event emmited!!
+20230501	14:14:04	5daac207-9acb-4d75-9510-c5864409fae5	Log event emmited!!
+20230501	14:16:10	121eec58-5f50-4b14-89bc-a1ab2d773b64	Log event emmited!!
+20230501	14:16:26	bc95ef70-6f25-4531-be6f-2c0793e8d001	Log event emmited!!
+20230501	14:19:29	66e2836c-f499-45ec-9f3d-7bc64df338d3	Log event emmited!!

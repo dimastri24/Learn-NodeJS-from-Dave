@@ -10,7 +10,6 @@
 
 -   Latest code.
 
-## 03TUT - NPM
+## 04TUT - Node Events
 
--   This is the beginning branch as it is starting from the 03TUT. Future content will be added on top of each branch.
--   We learn all about NPM and basic structure folder.
+-   We learn on how to create and emit an event to create a log.
