@@ -1,5 +1,5 @@
 {
-    "name": "06tut",
+    "name": "07tut",
     "version": "1.0.0",
     "description": "Express Tutorials",
     "main": "server.js",
@@ -11,6 +11,7 @@
     "author": "Dimas Tri Raharjo",
     "license": "ISC",
     "dependencies": {
+        "cors": "^2.8.5",
         "date-fns": "^2.30.0",
         "express": "^4.18.2",
         "uuid": "^9.0.0"

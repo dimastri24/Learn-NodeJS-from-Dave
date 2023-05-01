@@ -11,7 +11,10 @@
 
 -   Latest code.
 
-## 06TUT - Intro to Express JS
+## 07TUT - Middleware in Express
 
--   Express js greatly help us handling the request and sending back the response.
--   In this tutorial we have see how express handle the routing like a waterfall. We could all chaining the route and this chaining will become of what we call middleware in the next tutorial.
+-   There are three type middleware: built-in, custom and 3rd party.
+-   built-in are urlendcoded, json and static. CORS are the example for the 3rd party. Here we also try to make a whitelisting of the cors.
+-   This tutorial we create custom middleware of logging event.
+-   use() is the way to define the middleware and this will apply to all the route.
+-   Don't forget to delete the domain and !origin for development when staging to production.
