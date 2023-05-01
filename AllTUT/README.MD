@@ -4,13 +4,14 @@
 
 -   Clone or unzip the repo.
 -   Checkout to intended Branch and read the note / guide on each md branch.
--   run `npm install` to download the node_modules
+-   run `npm install` to download the node_modules.
+-   run `npm run dev` to run the server.
 
 ## Master / Main
 
 -   Latest code.
 
-## 05TUT - Build a Web Server
+## 06TUT - Intro to Express JS
 
--   We create a web server from scratch with just node.js. Create the server, handle the request and serve the file manually by using all the knowledge we have learn in the past tutorials.
--   This is the bare minimum on how to build the web server so it cannot handle more dynamically of the request and methods. Starting next tutorial we will use Express.js to help us build better and proper web server / backend.
+-   Express js greatly help us handling the request and sending back the response.
+-   In this tutorial we have see how express handle the routing like a waterfall. We could all chaining the route and this chaining will become of what we call middleware in the next tutorial.
