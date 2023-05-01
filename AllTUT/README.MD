@@ -10,6 +10,7 @@
 
 -   Latest code.
 
-## 04TUT - Node Events
+## 05TUT - Build a Web Server
 
--   We learn on how to create and emit an event to create a log.
+-   We create a web server from scratch with just node.js. Create the server, handle the request and serve the file manually by using all the knowledge we have learn in the past tutorials.
+-   This is the bare minimum on how to build the web server so it cannot handle more dynamically of the request and methods. Starting next tutorial we will use Express.js to help us build better and proper web server / backend.
