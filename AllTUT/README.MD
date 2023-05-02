@@ -11,10 +11,10 @@
 
 -   Latest code.
 
-## 07TUT - Middleware in Express
+## 08TUT - Router in Express plus REST API routing
 
--   There are three type middleware: built-in, custom and 3rd party.
--   built-in are urlendcoded, json and static. CORS are the example for the 3rd party. Here we also try to make a whitelisting of the cors.
--   This tutorial we create custom middleware of logging event.
--   use() is the way to define the middleware and this will apply to all the route.
--   Don't forget to delete the domain and !origin for development when staging to production.
+-   Here we learn a lot on the essentials routing. We seperate the router to another js file and we call it in the server.js
+-   The important stuff is get to know routing for creating API as example we done in the employees.js
+-   Extra thing we learn is using Thunder Client for API testing. It's a lightweight REST API client for vscode.
+-   I untracked or removed the log file .txt so can start fresh generate new file after cloning.
+-   thunder-test is where the API testing being saved.

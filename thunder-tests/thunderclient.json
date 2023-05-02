@@ -1,0 +1,87 @@
+[
+  {
+    "_id": "a6eeb2c0-bb0f-4b3a-9665-770bf01494a8",
+    "colId": "9d56bf19-c327-4949-9d73-e1265ff25bea",
+    "containerId": "",
+    "name": "get-all",
+    "url": "http://localhost:3500/employees",
+    "method": "GET",
+    "sortNum": 10000,
+    "created": "2023-05-02T02:32:44.900Z",
+    "modified": "2023-05-02T02:32:49.608Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "45496b44-0d38-4b62-ab11-e9a904f1d499",
+    "colId": "9d56bf19-c327-4949-9d73-e1265ff25bea",
+    "containerId": "",
+    "name": "post",
+    "url": "http://localhost:3500/employees",
+    "method": "POST",
+    "sortNum": 20000,
+    "created": "2023-05-02T02:48:11.792Z",
+    "modified": "2023-05-02T02:49:36.122Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n \"firstname\": \"Danu\",\n \"lastname\": \"Atamaja\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "ebc00379-ab1b-4d08-903b-eb6cd1b3fb5d",
+    "colId": "9d56bf19-c327-4949-9d73-e1265ff25bea",
+    "containerId": "",
+    "name": "put",
+    "url": "http://localhost:3500/employees",
+    "method": "PUT",
+    "sortNum": 30000,
+    "created": "2023-05-02T02:50:05.909Z",
+    "modified": "2023-05-02T02:50:44.380Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"id\": 2,\n \"firstname\": \"Danu\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "fe797f7c-220d-46c3-b794-7f5be89b7890",
+    "colId": "9d56bf19-c327-4949-9d73-e1265ff25bea",
+    "containerId": "",
+    "name": "delete",
+    "url": "http://localhost:3500/employees",
+    "method": "DELETE",
+    "sortNum": 40000,
+    "created": "2023-05-02T02:50:51.203Z",
+    "modified": "2023-05-02T02:51:13.134Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"id\": 2\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "0389c5de-529a-4bed-ac2b-be9be52e57dd",
+    "colId": "9d56bf19-c327-4949-9d73-e1265ff25bea",
+    "containerId": "",
+    "name": "get one",
+    "url": "http://localhost:3500/employees/1",
+    "method": "GET",
+    "sortNum": 50000,
+    "created": "2023-05-02T02:51:35.427Z",
+    "modified": "2023-05-02T02:52:41.811Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  }
+]
