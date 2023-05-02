@@ -11,7 +11,10 @@
 
 -   Latest code.
 
-## 09TUT - MVC Model and CRUD REST API
+## 10TUT - User Password Authentication
 
--   We have clean up the unnecessary code and refactor the structure into MVC model, not much changes as we already done part of it along the way.
--   In the employeeController.js we write CRUD operation the React way so its not going to change the employees.json but only being store in memory.
+-   Now we have come to the register user and login.
+-   Register user is just store data with extra step that is like check duplicate user and hash the password with the help of bcrypt.
+-   Next is the login in the authController.js, well first we find the user if it exist then we compare the password.
+-   To this point just like that export and import to the router and call it in the server.js
+-   It works like as we expected. Furthermore we will implement JWT for login session and router access in the next tutorial.
