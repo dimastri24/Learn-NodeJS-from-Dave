@@ -8,9 +8,13 @@
     "method": "GET",
     "sortNum": 10000,
     "created": "2023-05-02T02:32:44.900Z",
-    "modified": "2023-05-02T02:32:49.608Z",
+    "modified": "2023-05-02T07:29:00.980Z",
     "headers": [],
     "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
     "tests": []
   },
   {
@@ -79,9 +83,13 @@
     "method": "GET",
     "sortNum": 50000,
     "created": "2023-05-02T02:51:35.427Z",
-    "modified": "2023-05-02T02:52:41.811Z",
+    "modified": "2023-05-02T07:30:37.891Z",
     "headers": [],
     "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
     "tests": []
   },
   {
@@ -112,14 +120,56 @@
     "method": "POST",
     "sortNum": 20000,
     "created": "2023-05-02T04:42:20.479Z",
-    "modified": "2023-05-02T04:44:50.691Z",
+    "modified": "2023-05-02T07:29:20.638Z",
     "headers": [],
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\n  \"user\": \"walt3\",\n  \"pwd\": \"12345\"\n}",
+      "raw": "{\n  \"user\": \"walt2\",\n  \"pwd\": \"12345\"\n}",
       "form": []
     },
+    "tests": [
+      {
+        "type": "set-env-var",
+        "custom": "json.accessToken",
+        "action": "setto",
+        "value": "{{token, global}}"
+      }
+    ]
+  },
+  {
+    "_id": "fbc05734-2ec6-4dee-8b2a-5196900b1b31",
+    "colId": "9fd6b204-dfe1-403e-9569-d59505f15072",
+    "containerId": "",
+    "name": "refresh",
+    "url": "refresh",
+    "method": "GET",
+    "sortNum": 30000,
+    "created": "2023-05-02T07:45:37.630Z",
+    "modified": "2023-05-02T07:47:43.555Z",
+    "headers": [],
+    "params": [],
+    "tests": [
+      {
+        "type": "set-env-var",
+        "custom": "json.accessToken",
+        "action": "setto",
+        "value": "{{token, global}}"
+      }
+    ]
+  },
+  {
+    "_id": "1a589153-327e-417d-8caf-fb2bafd8c6a1",
+    "colId": "9fd6b204-dfe1-403e-9569-d59505f15072",
+    "containerId": "",
+    "name": "logout",
+    "url": "logout",
+    "method": "GET",
+    "sortNum": 40000,
+    "created": "2023-05-02T08:05:20.549Z",
+    "modified": "2023-05-02T08:05:26.576Z",
+    "headers": [],
+    "params": [],
     "tests": []
   }
 ]

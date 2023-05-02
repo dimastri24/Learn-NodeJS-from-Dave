@@ -11,10 +11,13 @@
 
 -   Latest code.
 
-## 10TUT - User Password Authentication
+## 11TUT - JWT Authentication
 
--   Now we have come to the register user and login.
--   Register user is just store data with extra step that is like check duplicate user and hash the password with the help of bcrypt.
--   Next is the login in the authController.js, well first we find the user if it exist then we compare the password.
--   To this point just like that export and import to the router and call it in the server.js
--   It works like as we expected. Furthermore we will implement JWT for login session and router access in the next tutorial.
+-   This tutorial quite long since we play around jwt means we need to create, store, verify, auth, refresh, delete the token.
+-   Here we add 3 new packages, dotenv for the use of .env, jsonwebtoken or the jwt, cookie-parser to create and delete cookie.
+-   Starting from creating jwt in authController.js and send the token in the response body also create the cookie for the refresh token.
+-   Second we apply the authentication middleware to the employees router with verifyJWT.js
+-   Next we need to create refreshTokenController.js to refresh the access token.
+-   Lastly logoutController.js to delete the refresh token that being store in the db so the access token cann't be refresh.
+-   Refresh token are the one being store in db and send to the client through cookie httpOnly. While the access token send to client normally in response body, this access token should be save in the memmory not cookie or any browser storage.
+-   That's why the duration of access token not very long but the refresh token quite long. Make sure to change the expiration when production.

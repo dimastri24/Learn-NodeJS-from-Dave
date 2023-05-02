@@ -1,1 +1,17 @@
-[]
+[
+  {
+    "_id": "309cc7ef-a585-46f3-9af9-1e85f3d5a3fe",
+    "name": "(Global Env)",
+    "default": false,
+    "global": true,
+    "sortNum": -2,
+    "created": "2023-05-02T07:20:21.982Z",
+    "modified": "2023-05-02T07:20:21.982Z",
+    "data": [
+      {
+        "name": "token",
+        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IndhbHQyIiwiaWF0IjoxNjgzMDE2MjAwLCJleHAiOjE2ODMwMTYyMzB9.li2E-w5mqotczsnd6lJWNTCZtGSfhjhqHae2RaBq4Hw"
+      }
+    ]
+  }
+]
