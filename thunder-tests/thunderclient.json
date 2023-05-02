@@ -41,12 +41,12 @@
     "method": "PUT",
     "sortNum": 30000,
     "created": "2023-05-02T02:50:05.909Z",
-    "modified": "2023-05-02T02:50:44.380Z",
+    "modified": "2023-05-02T03:43:59.385Z",
     "headers": [],
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\n  \"id\": 2,\n \"firstname\": \"Danu\"\n}",
+      "raw": "{\n  \"id\": 2,\n  \"firstname\": \"Danu\"\n}",
       "form": []
     },
     "tests": []
@@ -60,12 +60,12 @@
     "method": "DELETE",
     "sortNum": 40000,
     "created": "2023-05-02T02:50:51.203Z",
-    "modified": "2023-05-02T02:51:13.134Z",
+    "modified": "2023-05-02T03:45:32.627Z",
     "headers": [],
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\n  \"id\": 2\n}",
+      "raw": "{\n  \"id\": 3\n}",
       "form": []
     },
     "tests": []

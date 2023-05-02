@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const cors = require('cors');
+const corsOptions = require('./config/corsOptions');
 const { logger } = require('./middleware/logEvents');
 const errorHandler = require('./middleware/errorHandler');
 
@@ -11,23 +12,9 @@ const PORT = process.env.PORT || 3500;
 app.use(logger);
 
 // cross origin resource sharing
-// whitlisting the domain
-const whiteList = ['https://www.yoursite.com', 'http://127.0.0.1:5500', 'http://localhost:3500'];
-const corsOptions = {
-    origin: (origin, callback) => {
-        if (whiteList.indexOf(origin) !== -1 || !origin) {
-            callback(null, true);
-        } else {
-            callback(new Error('Not allowed by CORS'));
-        }
-    },
-    optionSuccessStatus: 200,
-};
 app.use(cors(corsOptions));
 
-// built-in middleware to handle urlendcoded data
-// in other words, form data
-// 'content-type: application/x-www-form-urlendcoded'
+// built-in middleware to handle urlendcoded form data
 app.use(express.urlencoded({ extended: false }));
 
 // built-in middleware for json
@@ -35,15 +22,11 @@ app.use(express.json());
 
 // serve static files
 app.use('/', express.static(path.join(__dirname, '/public')));
-app.use('/subdir', express.static(path.join(__dirname, '/public')));
 
 // call Router
 app.use('/', require('./routes/root'));
-app.use('/subdir', require('./routes/subdir'));
 app.use('/employees', require('./routes/api/employees'));
 
-// 404 as middleware
-// use() doesn't accept regex, instead use all() although all() not a middleware function
 app.all('*', (req, res) => {
     res.status(404);
     if (req.accepts('html')) {

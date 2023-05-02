@@ -11,10 +11,7 @@
 
 -   Latest code.
 
-## 08TUT - Router in Express plus REST API routing
+## 09TUT - MVC Model and CRUD REST API
 
--   Here we learn a lot on the essentials routing. We seperate the router to another js file and we call it in the server.js
--   The important stuff is get to know routing for creating API as example we done in the employees.js
--   Extra thing we learn is using Thunder Client for API testing. It's a lightweight REST API client for vscode.
--   I untracked or removed the log file .txt so can start fresh generate new file after cloning.
--   thunder-test is where the API testing being saved.
+-   We have clean up the unnecessary code and refactor the structure into MVC model, not much changes as we already done part of it along the way.
+-   In the employeeController.js we write CRUD operation the React way so its not going to change the employees.json but only being store in memory.
