@@ -17,5 +17,17 @@
         "baseUrl": "http://localhost:3500/"
       }
     }
+  },
+  {
+    "_id": "6b201e42-9532-47ab-89a2-b64030c17849",
+    "colName": "user-api",
+    "created": "2023-05-03T07:37:30.313Z",
+    "sortNum": 30000,
+    "folders": [],
+    "settings": {
+      "options": {
+        "baseUrl": "http://localhost:3500/"
+      }
+    }
   }
 ]

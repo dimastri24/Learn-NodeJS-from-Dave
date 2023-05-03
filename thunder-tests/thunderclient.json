@@ -26,12 +26,12 @@
     "method": "POST",
     "sortNum": 20000,
     "created": "2023-05-02T02:48:11.792Z",
-    "modified": "2023-05-03T02:14:25.961Z",
+    "modified": "2023-05-03T07:13:24.437Z",
     "headers": [],
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\n \"firstname\": \"Danu\",\n \"lastname\": \"Atamaja\"\n}",
+      "raw": "{\n \"firstname\": \"Walt\",\n \"lastname\": \"Disney\"\n}",
       "form": []
     },
     "auth": {
@@ -49,13 +49,17 @@
     "method": "PUT",
     "sortNum": 30000,
     "created": "2023-05-02T02:50:05.909Z",
-    "modified": "2023-05-02T03:43:59.385Z",
+    "modified": "2023-05-03T07:15:10.898Z",
     "headers": [],
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\n  \"id\": 2,\n  \"firstname\": \"Danu\"\n}",
+      "raw": "{\n  \"id\": \"64520998ddda05ef2487a31e\",\n  \"firstname\": \"Reza\"\n}",
       "form": []
+    },
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
     },
     "tests": []
   },
@@ -68,12 +72,12 @@
     "method": "DELETE",
     "sortNum": 40000,
     "created": "2023-05-02T02:50:51.203Z",
-    "modified": "2023-05-03T02:38:58.810Z",
+    "modified": "2023-05-03T07:15:31.913Z",
     "headers": [],
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\n  \"id\": 3\n}",
+      "raw": "{\n  \"id\": \"64520998ddda05ef2487a31e\"\n}",
       "form": []
     },
     "auth": {
@@ -87,11 +91,11 @@
     "colId": "9d56bf19-c327-4949-9d73-e1265ff25bea",
     "containerId": "",
     "name": "get one",
-    "url": "http://localhost:3500/employees/1",
+    "url": "http://localhost:3500/employees/64520946ddda05ef2487a319",
     "method": "GET",
     "sortNum": 50000,
     "created": "2023-05-02T02:51:35.427Z",
-    "modified": "2023-05-02T07:30:37.891Z",
+    "modified": "2023-05-03T07:12:21.652Z",
     "headers": [],
     "params": [],
     "auth": {
@@ -109,12 +113,12 @@
     "method": "POST",
     "sortNum": 10000,
     "created": "2023-05-02T04:24:45.840Z",
-    "modified": "2023-05-03T04:45:15.600Z",
+    "modified": "2023-05-03T07:42:52.413Z",
     "headers": [],
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\n  \"user\": \"walt1\",\n  \"pwd\": \"Aa$12345\"\n}",
+      "raw": "{\n  \"user\": \"angel1\",\n  \"pwd\": \"Aa$12345\"\n}",
       "form": []
     },
     "tests": []
@@ -128,12 +132,12 @@
     "method": "POST",
     "sortNum": 20000,
     "created": "2023-05-02T04:42:20.479Z",
-    "modified": "2023-05-03T02:40:15.327Z",
+    "modified": "2023-05-03T08:55:12.965Z",
     "headers": [],
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\n  \"user\": \"walt1\",\n  \"pwd\": \"Aa$12345\"\n}",
+      "raw": "{\n  \"user\": \"steve1\",\n  \"pwd\": \"Aa$12345\"\n}",
       "form": []
     },
     "tests": [
@@ -178,6 +182,65 @@
     "modified": "2023-05-02T08:05:26.576Z",
     "headers": [],
     "params": [],
+    "tests": []
+  },
+  {
+    "_id": "7cfacdf7-de64-4035-8880-0f743b58e8ce",
+    "colId": "6b201e42-9532-47ab-89a2-b64030c17849",
+    "containerId": "",
+    "name": "get all",
+    "url": "users",
+    "method": "GET",
+    "sortNum": 10000,
+    "created": "2023-05-03T07:37:38.414Z",
+    "modified": "2023-05-03T07:39:04.788Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "a7c10ba1-d535-4941-9e4d-333c3458b622",
+    "colId": "6b201e42-9532-47ab-89a2-b64030c17849",
+    "containerId": "",
+    "name": "get one",
+    "url": "users/6452107cb14e4161e46db597",
+    "method": "GET",
+    "sortNum": 20000,
+    "created": "2023-05-03T07:42:03.821Z",
+    "modified": "2023-05-03T08:36:04.334Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "6373f9dd-88c3-45ea-a304-2bf24d97d925",
+    "colId": "6b201e42-9532-47ab-89a2-b64030c17849",
+    "containerId": "",
+    "name": "delete",
+    "url": "users",
+    "method": "DELETE",
+    "sortNum": 30000,
+    "created": "2023-05-03T07:43:10.146Z",
+    "modified": "2023-05-03T07:45:51.781Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"id\": \"6452107cb14e4161e46db597\"\n}",
+      "form": []
+    },
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
     "tests": []
   }
 ]

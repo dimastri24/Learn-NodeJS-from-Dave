@@ -46,6 +46,7 @@ app.use('/logout', require('./routes/logout'));
 
 app.use(verifyJWT); // put middleware jwt for the rest of the routing below
 app.use('/employees', require('./routes/api/employees'));
+app.use('/users', require('./routes/api/users'));
 
 app.all('*', (req, res) => {
     res.status(404);

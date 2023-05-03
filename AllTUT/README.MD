@@ -23,9 +23,7 @@
 
 -   Latest code.
 
-## 14TUT - MongoDB Schema and Modeling
+## 15TUT - MongoDB Async CRUD
 
--   Now we are no longer using manualy store in json but store it in our MongoDB. So we may get rid the use of it in our controller.
--   Let's go to our model folder and create Employee and User Schema. For more about the schema and it's option go the mongoose documentation.
--   What we export will be the mongoose.model(), first arg is the model name it will automatically convert plural lowercase for the colletion, second arg is the schema, third arg is the collection name and its optional if the model and collection has different name.
--   Next we try to insert a document or what we used to know as record in other sql db. Go to the registerController for the example.
+-   Here is the last but not least part of the MongoDB that we will apply in our backend NodeJS. We are just going to replace all the code where we still use manually write to json file with Mongoose.
+-   Just start by go to the employeeController.js to see the implementation. For exercise we create usersController and users route then test it out the result.
