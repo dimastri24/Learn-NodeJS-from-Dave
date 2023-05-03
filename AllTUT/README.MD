@@ -23,11 +23,9 @@
 
 -   Latest code.
 
-## 13TUT - Install and Connect to MongoDB
+## 14TUT - MongoDB Schema and Modeling
 
--   In the tutorial Dave teach us to use the cloud MongoDB but here I'm just going to use the local MongoDB by installing the service in my PC.
--   Create Database `CompanyDB` and collection `employee`.
--   Add `DATABASE_URI=<uri>` into the .env file.
--   Install mongoose to connect and modeling the MongoDB. The lastest version is ^7 but I'll just going to use the ^6.
--   Remove require('dotenv').config from, other files and let just the server.js call it.
--   Make a dbConn config for the connection.
+-   Now we are no longer using manualy store in json but store it in our MongoDB. So we may get rid the use of it in our controller.
+-   Let's go to our model folder and create Employee and User Schema. For more about the schema and it's option go the mongoose documentation.
+-   What we export will be the mongoose.model(), first arg is the model name it will automatically convert plural lowercase for the colletion, second arg is the schema, third arg is the collection name and its optional if the model and collection has different name.
+-   Next we try to insert a document or what we used to know as record in other sql db. Go to the registerController for the example.
