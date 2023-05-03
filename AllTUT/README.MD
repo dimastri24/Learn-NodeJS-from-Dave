@@ -11,13 +11,8 @@
 
 -   Latest code.
 
-## 11TUT - JWT Authentication
+## 12TUT - Authorization Roles and Permission
 
--   This tutorial quite long since we play around jwt means we need to create, store, verify, auth, refresh, delete the token.
--   Here we add 3 new packages, dotenv for the use of .env, jsonwebtoken or the jwt, cookie-parser to create and delete cookie.
--   Starting from creating jwt in authController.js and send the token in the response body also create the cookie for the refresh token.
--   Second we apply the authentication middleware to the employees router with verifyJWT.js
--   Next we need to create refreshTokenController.js to refresh the access token.
--   Lastly logoutController.js to delete the refresh token that being store in the db so the access token cann't be refresh.
--   Refresh token are the one being store in db and send to the client through cookie httpOnly. While the access token send to client normally in response body, this access token should be save in the memmory not cookie or any browser storage.
--   That's why the duration of access token not very long but the refresh token quite long. Make sure to change the expiration when production.
+-   Now we applied Authorization to our API based on their roles.
+-   Since we will have roles in the user data we gonna need all our controller that related to it. In registerController we add role when creating new user. In authController and refreshTokenController we add roles inside the token lastly we need to decode the role in verifyJWT.
+-   Next up we create the verifyRoles middleware that will be use in the controller to check if the role from token are one of the roles that got permission.
